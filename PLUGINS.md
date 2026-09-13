@@ -181,6 +181,7 @@
 | dsh-wallpaper_share | [YRN-playmaker/dsh-wallpaper_share](https://github.com/YRN-playmaker/dsh-wallpaper_share) | Wallpaper Engine 壁纸同步为 DSH Web 背景（本地桥接）：预览/捕获/完整三档渲染、显示器锁定、本地与市场壁纸库（标题搜索、分页）、专注透镜与眼动追踪、沉浸模式、DWP 挂载；Windows 应用启动器支持直链与 139 网盘分享、加密 zip/7z 解包与一键启动（每次弹确认） | 待测 |
 | dsh-insight-tree | [xingzhen199186/dsh-insight-tree](https://github.com/xingzhen199186/dsh-insight-tree) | DSH 运行可观测与插件运维面板：Profile 插件树、Loader 真实 fiber 状态、能力/依赖/兼容性、本轮会话插件活动与上游来源/版本核验；一键关闭/启用/更新/卸载 + 独立启动失败诊断页（DSH 未运行也可单独启动）；npm `dsh-insight-tree`@0.1.2，MIT | 待测 |
 | dsh-alpha | [songofhawk/dsh-alpha](https://github.com/songofhawk/dsh-alpha) | 多机多 Agent 编排与控制平台：从一个 DSH 会话发现跨设备 Agent 与工作区，按机器、仓库、能力和负载路由任务，统一回传进度、审批与结果；支持断线恢复，npm `dsh-alpha` | 待测 |
+| KISS_Law-DSH | [Shaky77/KISS_Law-DSH](https://github.com/Shaky77/KISS_Law-DSH) | 唯稳律英文版（KISS’s Law = Keep Integrity & Steady State）：与中文主仓 weiwen-law-dsh 同构的通用型因果约束中间件（白箱呈现）——R→S→D→H→M 五元因果链白箱裁决引擎，给 DSH Agent 挂 6 白箱工具 + 3 道硬性闸门（模型之外、执行之内，不侵内 H）；README / DESIGN / 代码注释全英文，面向国际用户；`npm test` 253/253 实测全绿（2026-09-13）；npm `dsh-kiss-law` | 待测 |
 ## 🧰 插件集
 
 | 插件 | 仓库 | 说明 | 运行级 |
