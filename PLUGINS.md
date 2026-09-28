@@ -167,7 +167,7 @@
 | dsh-humanize | [Guard42/dsh-humanize](https://github.com/Guard42/dsh-humanize) | Humanize 模式 agent 预设：把多阶段目标编排为可恢复的 Flow（draft→check→lock→终局评审→run/resume），SHA-256 流锁身份 + HMAC 终局门禁 + 事件溯源断点续跑；15 个 flow_* 工具，纯 `node:` 内置零 npm 依赖，`dsh plugin add github:Guard42/dsh-humanize` 即装，v0.1.1 起兼容原版 harness 持久层（不写自定义会话事件） | 待测 |
 | dsh-forge | [maxmilian/dsh-forge](https://github.com/maxmilian/dsh-forge) | 自建 Gitea / Forgejo 的只读工具，走两者共用的 REST API：实例版本、仓库列表、议题与 PR 搜索和读取、PR diff 与变更文件，以及 Actions 运行、任务与纯文本日志；11 个工具全部只读，npm `@maxhsu/dsh-forge` 0.3.3 | 待测 |
 | dsh-backup | [xiaoyuyu6420/dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) | 一键备份与恢复 ~/.dsh 用户数据：定时自动备份（重启不中断）、sha256 完整性校验与轮换、宿主升级前自动快照、会话日志体检与定点修复（doctor）、DSH 起不来也能用的零依赖救援通道、凭据默认脱敏只存本机 vault、跨机云端同步；npm `@xiaoyuyu6420/dsh-backup` 0.9.0 | 待测 |
-| weiwen-law-dsh | [Shaky77/weiwen-law-dsh](https://github.com/Shaky77/weiwen-law-dsh) | 通用型因果约束中间件（白箱呈现）：R→S→D→H→M 五元因果链白箱裁决引擎，给 DSH Agent 挂 6 白箱工具 + 3 道硬性闸门（模型之外、执行之内，不侵内 H）；跨 11 场景双模型决策层 100% 收敛、引擎确定性 100% 实测（npm test 44/44 基础版 + 活系统 101 单测全绿） | 待测 |
+| weiwen-law-dsh | [Shaky77/weiwen-law-dsh](https://github.com/Shaky77/weiwen-law-dsh) | 通用型因果约束中间件（白箱呈现）：R→S→D→H→M 五元因果链白箱裁决引擎，给 DSH Agent 挂 7 白箱工具 + 3 道硬性闸门 + 1 只读审计钩（模型之外、执行之内，不侵内 H）；跨 11 场景双模型决策层 100% 收敛、引擎确定性 100% 实测（npm test 364/364 全绿） | 待测 |
 | dsh-qqbot-panel | [zhengjy01/dsh-qqbot-panel](https://github.com/zhengjy01/dsh-qqbot-panel) | 为官方 @tencent-connect/dsh-qqbot 提供的可视化配置面板（管理凭据、访问模式与白名单、工作区选择、扫码绑定）。 | 待测 |
 | dsh-ticktick | [PerryLink/dsh-ticktick](https://github.com/PerryLink/dsh-ticktick) | TickTick（滴答清单）任务桥：会话页头部任务面板与精选代理工具，走官方 TickTick MCP 端点 | 待测 |
 | dsh-zsxq | [zhengjy01/dsh-zsxq](https://github.com/zhengjy01/dsh-zsxq) | 知识星球（zsxq）集成：Cookie/扫码登录非官方 Web API，提供星球列表 / 主题列表 / 主题详情 / 搜索 / 发布 / 评论 / 点赞工具与 Web 设置面板 | 待测 |
@@ -233,7 +233,7 @@
 | dsh-wechat-clawbot | [zhengjy01/dsh-wechat-clawbot](https://github.com/zhengjy01/dsh-wechat-clawbot) | 微信 ClawBot 桥接（官方腾讯 iLink / ClawBot）：扫码登录悬浮球把消息桥接到 agent 会话，复用 context_token 支持窗口外主动推送；`lubaiUwU/DSH-WeChatClawBot` 的维护分支（npm `dsh-wechat-clawbot@0.2.0`） | 待测 |
 
 | dsh-gemini-pool | [qikairo7/dsh-gemini-pool](https://github.com/qikairo7/dsh-gemini-pool) | 多账号 Google Gemini 提供商：按剩余额度挑选账号，遇 429 指数退避切换，后台探活已禁用账号；声明 dsh.bundle.patch（仓库根 cordis.patch.yml），`dsh plugin add github:qikairo7/dsh-gemini-pool` 可装，MIT | 待测 |
-| KISS_Law-DSH | [Shaky77/KISS_Law-DSH](https://github.com/Shaky77/KISS_Law-DSH) | 唯稳律英文版 KISS's Law（守真·稳态 / Keep Integrity & Steady State's Law）——与中文主仓 weiwen-law-dsh 同构的通用型因果裁决中间件（白箱呈现）：R→S→D→H→M 五元因果链白箱裁决引擎，给 DSH Agent 挂 7 白箱工具 + 3 道硬性闸门 + 1 只读审计钩（模型之外、执行之内，不侵内 H）；跨 12 场景双模型（DeepSeek + mock）实测、npm test 332/332 全绿；AGPL-3.0 / 双许可 | 待测 |
+| KISS_Law-DSH | [Shaky77/KISS_Law-DSH](https://github.com/Shaky77/KISS_Law-DSH) | 唯稳律英文版 KISS's Law（守真·稳态 / Keep Integrity & Steady State's Law）——与中文主仓 weiwen-law-dsh 同构的通用型因果裁决中间件（白箱呈现）：R→S→D→H→M 五元因果链白箱裁决引擎，给 DSH Agent 挂 7 白箱工具 + 3 道硬性闸门 + 1 只读审计钩（模型之外、执行之内，不侵内 H）；跨 12 场景双模型（DeepSeek + mock）实测、npm test 362/362 全绿；AGPL-3.0 / 双许可 | 待测 |
 | dsh-oh-my-claude | [lcestou/dsh-oh-my-claude](https://github.com/lcestou/dsh-oh-my-claude) | 把已登录的 Claude Code CLI 作为 dsh 的 LLM 供应商（stream-json）：实时模型列表、按会话恢复、审批中转、图片、记忆/回退/变更面板、远程 SSH 主机上的工作区；npm `dsh-oh-my-claude` | 待测 |
 
 ## 🛠 基础设施
